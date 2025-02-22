@@ -1,0 +1,77 @@
+:root {
+  @media screen and (min-width: 640px) {
+    --fs-5xl: 3.815rem;
+    --fs-4xl: 3.052rem;
+    --fs-3xl: 2.441rem;
+    --fs-2xl: 1.953rem;
+    --fs-xl: 1.563rem;
+    --fs-l: 1.25rem;
+    --fs-m: 1rem;
+    --fs-s: 0.8rem;
+    --fs-xs: 0.64rem;
+  }
+
+  --fs-5xl: 2.027rem;
+  --fs-4xl: 1.802rem;
+  --fs-3xl: 1.602rem;
+  --fs-2xl: 1.424rem;
+  --fs-xl: 1.266rem;
+  --fs-l: 1.125rem;
+  --fs-m: 1rem;
+  --fs-s: 0.889rem;
+  --fs-xs: 0.79rem;
+}
+
+.xl-title {
+  font-size: var(--fs-5xl);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.l-title {
+  font-size: var(--fs-4xl);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.title {
+  font-size: var(--fs-3xl);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.s-title {
+  font-size: var(--fs-2xl);
+  line-height: 1;
+  font-weight: 600;
+}
+
+.l-subtitle {
+  font-size: var(--fs-xl);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: var(--fs-l);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: var(--fs-m);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.s-paragraph {
+  font-size: var(--fs-s);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.xs-paragraph {
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+  font-weight: 500;
+}
