@@ -1,0 +1,56 @@
+.switch {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+label:has(input.switch) {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 2.25rem;
+  height: 1.25rem;
+  border: 0.0625rem solid;
+  border-radius: 50vh;
+
+  border-color: var(--neutral-200);
+  background-color: var(--neutral-200);
+
+  cursor: pointer;
+
+  transition: background-color 100ms linear, border-color 100ms linear;
+
+  &::before {
+    position: absolute;
+    left: 0.05rem;
+
+    content: "";
+    display: block;
+    width: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+
+    transition: transform 100ms linear;
+  }
+
+  &:has(input:focus-visible) {
+    outline: solid 0.125rem var(--neutral-400);
+    outline-offset: 0.125rem;
+  }
+
+  &:has(input:checked) {
+    &::before {
+      transform: translateX(calc(100% - 0.05rem));
+    }
+
+    background-color: var(--neutral-950);
+  }
+
+  &:has(input:disabled) {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
