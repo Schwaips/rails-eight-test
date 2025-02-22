@@ -1,0 +1,20 @@
+<% case @builder %>
+<% when "default" %>
+  <%= tag.button type: @type, class: @classes, disabled: @disabled, data: @data do %>
+    <%= helpers.svg_tag(@left_icon) if @left_icon %>
+    <%= content %>
+    <%= helpers.svg_tag(@right_icon) if @right_icon %>
+  <% end %>
+<% when "button_to" %>
+  <%= button_to @path, method: @method, class: @classes, disabled: @disabled, data: @data do %>
+    <%= helpers.svg_tag(@left_icon) if @left_icon %>
+    <%= content %>
+    <%= helpers.svg_tag(@right_icon) if @right_icon %>
+  <% end %>
+<% when "link_to" %>
+  <%= link_to @path, class: @classes, disabled: @disabled, data: @data  do %>
+    <%= helpers.svg_tag(@left_icon) if @left_icon %>
+    <%= content %>
+    <%= helpers.svg_tag(@right_icon) if @right_icon %>
+  <% end %>
+<% end %>
