@@ -1,0 +1,89 @@
+#flashes {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 21rem;
+  padding: 1.5rem;
+  z-index: 1000;
+}
+
+.flash {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  padding-right: 2.5rem;
+  border: 0.0625rem solid var(--neutral-300);
+  border-radius: 0.5rem;
+  background-color: white;
+
+  opacity: 0;
+
+  &[open] {
+    animation: flash-open 200ms ease-in-out forwards;
+  }
+
+  &[aria-hidden="true"] {
+    animation: flash-close 200ms ease-in-out forwards;
+  }
+
+  &--notice {
+    border-color: var(--emerald-300);
+  }
+
+  &--alert {
+    border-color: var(--rose-300);
+  }
+
+  &__button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+
+    width: 1.5rem;
+    aspect-ratio: 1;
+    padding: 0.25rem;
+
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--neutral-950);
+    background-color: transparent;
+
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+
+    &:hover {
+      background-color: var(--neutral-100);
+    }
+
+    &:focus-visible {
+      outline: 0.125rem solid var(--neutral-400);
+    }
+  }
+}
+
+@keyframes flash-open {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flash-close {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

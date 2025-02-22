@@ -1,0 +1,65 @@
+.input {
+  padding-inline: 0.75rem;
+  padding-block: 0.5em;
+
+  font-size: var(--fs-s);
+  line-height: 1.5;
+  font-weight: 400;
+
+  border: 0.0625rem solid;
+  border-radius: 0.25rem;
+
+  border-color: var(--neutral-300);
+  color: var(--neutral-950);
+  background-color: white;
+
+  transition: border-color 100ms ease-in-out;
+
+  &::placeholder {
+    color: var(--neutral-500);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--neutral-500);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: var(--neutral-50);
+  }
+
+  &--ghost {
+    border: none;
+    background-color: transparent;
+
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+
+  &--with-icon {
+    display: grid;
+    grid-template-columns: 1fr 1.25rem;
+    align-items: center;
+
+    padding: 0;
+    padding-right: 0.5rem;
+
+    svg {
+      font-size: 1.25rem;
+      color: var(--neutral-950);
+    }
+
+    &:has(input:focus) {
+      border-color: var(--neutral-500);
+    }
+
+    &:has(input:disabled) {
+      cursor: not-allowed;
+      opacity: 0.5;
+      background-color: var(--neutral-50);
+    }
+  }
+}
