@@ -13,31 +13,10 @@ body {
   text-align: center;
 }
 
-header {
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
 header h1 {
   margin: 0;
   font-size: 2.5rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 #hero {
@@ -47,20 +26,6 @@ nav a {
 #hero h2 {
   font-size: 3rem;
   margin-bottom: 20px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #ff9800;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #e68900;
 }
 
 section {
@@ -77,6 +42,10 @@ section {
 footer {
   padding: 20px;
   background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer p {

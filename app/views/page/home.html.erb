@@ -1,47 +1,40 @@
-<header>
-    <h1>Welcome to the Cosmos</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section id="hero">
-    <h2>Explore the Universe of My Work</h2>
-    <p>Dive into my portfolio and discover stellar projects.</p>
-    <%= render(Common::Button::BtnComponent.new(builder: 'default', style: 'primary', right_icon: 'cube')) do %>
-      View project
-    <% end %>
-  </section>
+  <div class="container">
+    <header>
+      <h1>Welcome to the Cosmos</h1>
+    </header>
+    
+    <section id="hero">
+      <h2>Explore the Universe of My Work</h2>
+      <p>Dive into my portfolio and discover stellar projects.</p>
+      <%= render(Common::Button::BtnComponent.new(builder: 'default', style: 'primary', right_icon: 'cube')) do %>
+        View project
+      <% end %>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a space enthusiast and developer who loves to build cosmic experiences on the web.</p>
-  </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a space enthusiast and developer who loves to build cosmic experiences on the web.</p>
+    </section>
 
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <section id="projects">
+      <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Galaxy Explorer</h3>
-      <p>An interactive map of the Milky Way.</p>
-    </div>
-    <div class="project">
-      <h3>Rocket Simulator</h3>
-      <p>A physics-based rocket launching game.</p>
-    </div>
-  </section>
+      <div class="project">
+        <h3>Galaxy Explorer</h3>
+        <p>An interactive map of the Milky Way.</p>
+      </div>
+      <div class="project">
+        <h3>Rocket Simulator</h3>
+        <p>A physics-based rocket launching game.</p>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Reach out if you'd like to collaborate on interstellar projects!</p>
-    <a href="mailto:space.dev@example.com" class="btn">Email Me</a>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out if you'd like to collaborate on interstellar projects!</p>
+      <a href="mailto:space.dev@example.com" class="btn">Email Me</a>
+    </section>  
+  </div>
 
-  <footer>
-    <p>&copy; 2024 Space Portfolio. All rights reserved.</p>
-  </footer>
+

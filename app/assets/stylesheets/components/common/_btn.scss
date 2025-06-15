@@ -1,114 +1,114 @@
-.btn {
-  $icon-size: 1.25em;
+// .btn {
+//   $icon-size: 1.25em;
 
-  border: 0.0625rem solid transparent;
-  background: none;
-  cursor: pointer;
+//   border: 0.0625rem solid transparent;
+//   background: none;
+//   cursor: pointer;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  gap: 0.5rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: fit-content;
+//   gap: 0.5rem;
 
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.5;
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
-  border-radius: 0.25rem;
+//   font-size: 0.875rem;
+//   font-weight: 500;
+//   line-height: 1.5;
+//   padding-inline: 1rem;
+//   padding-block: 0.5rem;
+//   border-radius: 0.25rem;
 
-  transition: all 150ms ease-in-out;
+//   transition: all 150ms ease-in-out;
 
-  svg {
-    font-size: $icon-size;
-  }
+//   svg {
+//     font-size: $icon-size;
+//   }
 
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
+//   &:disabled {
+//     opacity: 0.5;
+//     cursor: not-allowed;
+//   }
 
-  &--primary {
-    color: var(--neutral-50);
-    background-color: var(--neutral-950);
+//   &--primary {
+//     color: var(--neutral-50);
+//     background-color: var(--neutral-950);
 
-    &:hover {
-      background-color: var(--neutral-800);
-    }
+//     &:hover {
+//       background-color: var(--neutral-800);
+//     }
 
-    &:disabled {
-      background-color: var(--neutral-950);
-    }
-  }
+//     &:disabled {
+//       background-color: var(--neutral-950);
+//     }
+//   }
 
-  &--secondary {
-    color: var(--neutral-950);
-    background-color: var(--neutral-200);
+//   &--secondary {
+//     color: var(--neutral-950);
+//     background-color: var(--neutral-200);
 
-    &:hover {
-      background-color: var(--neutral-100);
-    }
+//     &:hover {
+//       background-color: var(--neutral-100);
+//     }
 
-    &:disabled {
-      background-color: var(--neutral-200);
-    }
-  }
+//     &:disabled {
+//       background-color: var(--neutral-200);
+//     }
+//   }
 
-  &--ghost {
-    color: var(--neutral-950);
-    background-color: transparent;
+//   &--ghost {
+//     color: var(--neutral-950);
+//     background-color: transparent;
 
-    &:hover {
-      background-color: var(--neutral-100);
-    }
+//     &:hover {
+//       background-color: var(--neutral-100);
+//     }
 
-    &:disabled {
-      background-color: var(--neutral-100);
-    }
-  }
+//     &:disabled {
+//       background-color: var(--neutral-100);
+//     }
+//   }
 
-  &--link:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-  }
+//   &--link:hover {
+//     text-decoration: underline;
+//     text-underline-offset: 0.5rem;
+//   }
 
-  &--load:disabled {
-    cursor: wait;
+//   &--load:disabled {
+//     cursor: wait;
 
-    svg {
-      display: none;
-    }
+//     svg {
+//       display: none;
+//     }
 
-    &::after {
-      content: "";
-      display: inline-block;
+//     &::after {
+//       content: "";
+//       display: inline-block;
 
-      width: $icon-size;
-      height: $icon-size;
-      border: 0.125rem solid currentColor;
-      border-top-color: transparent;
-      border-radius: 50vh;
+//       width: $icon-size;
+//       height: $icon-size;
+//       border: 0.125rem solid currentColor;
+//       border-top-color: transparent;
+//       border-radius: 50vh;
 
-      animation: spin 1s linear infinite;
-    }
-  }
+//       animation: spin 1s linear infinite;
+//     }
+//   }
 
-  &--full {
-    width: 100%;
-  }
+//   &--full {
+//     width: 100%;
+//   }
 
-  &--icon {
-    padding: calc($icon-size / 4);
-  }
+//   &--icon {
+//     padding: calc($icon-size / 4);
+//   }
 
-  &--small {
-    font-size: 0.75rem;
-  }
-}
+//   &--small {
+//     font-size: 0.75rem;
+//   }
+// }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes spin {
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

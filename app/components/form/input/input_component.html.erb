@@ -1,0 +1,13 @@
+<% helpers.simple_form_for :form do |f| %>
+  <%= f.input :input,
+              as: @as,
+              label: @label,
+              placeholder: @placeholder,
+              required: @required,
+              hint: @hint,
+              error: @error,
+              disabled: @disabled,
+              wrapper_html: {
+                style: "width: 300px;"
+              } %>
+<% end %>
