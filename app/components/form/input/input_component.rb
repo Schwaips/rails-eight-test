@@ -3,7 +3,7 @@
 module Form
   module Input
     class InputComponent < ViewComponent::Base
-      def initialize(as: 'string',
+      def initialize(as: "string",
                      required: false,
                      label: nil,
                      hint: nil,
