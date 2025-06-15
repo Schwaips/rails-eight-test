@@ -31,11 +31,11 @@ module Common
 
       def generate_classes(style, other_styles)
         classes = [ "btn" ]
-        classes << "btn--#{style}"
+        classes << "btn-#{style}"
         return classes unless other_styles
 
         other_styles.split.each do |other_style|
-          classes << "btn--#{other_style}"
+          classes << "#{other_style}"
         end
 
         classes
