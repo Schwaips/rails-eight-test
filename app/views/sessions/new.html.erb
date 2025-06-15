@@ -1,11 +1,27 @@
-<%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-<%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
+<div class="container py-5">
+  <h2>Connexion</h2>
+  <%= form_with url: session_path do |form| %>
 
-<%= form_with url: session_path do |form| %>
-  <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address] %><br>
-  <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: "Enter your password", maxlength: 72 %><br>
-  <%= form.submit "Sign in" %>
-<% end %>
+    <%#= render(Form::Input::InputComponent.new(as: "string", required: true, label: "Email", hint: "Email address", placeholder: "Enter your email address", disabled: false)) %>
+    <%= form.email_field :email_address, 
+      required: true, 
+      autofocus: true, 
+      autocomplete: "username", 
+      placeholder: "Enter your email address", 
+      value: params[:email_address],
+      class: "form-control"
+      %><br>
+    <%= form.password_field :password, 
+      required: true, 
+      autocomplete: "current-password", 
+      placeholder: "Enter your password", 
+      maxlength: 72,
+      class: "form-control"
+      %><br>
+    <%= form.submit "Sign in", class:"btn btn-success" %>
+  <% end %>
 <br>
 
 <%= link_to "Forgot password?", new_password_path %>
+
+</div>

@@ -1,0 +1,16 @@
+<nav>
+  <% if Current.user.present? %>
+      <%= link_to %>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <% if Current.user.present? %>
+        <%= button_to "Sign out", session_path, method: :delete, class: "inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+      <% end %>
+
+  <% else %>
+    <div class="d-flex flex-row-reverse gap-4">
+      <%= link_to "Se connecter", "#", class: "btn btn-primary" %>
+      <%= link_to "S'inscrire", "#", class: "btn btn-secondary" %>
+    </div>
+  <% end %>
+</nav>

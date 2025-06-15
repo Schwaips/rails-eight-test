@@ -13,7 +13,7 @@ body {
   text-align: center;
 }
 
-header {
+nav {
   padding: 20px;
   background: rgba(0, 0, 0, 0.7);
   position: sticky;
@@ -49,19 +49,21 @@ nav a {
   margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #ff9800;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
+// .btn {
+//   display: inline-block;
+//   padding: 10px 20px;
+//   &.btn--primary {
+//     background: #ff9800;
+//     color: #fff;
+//   }
+//   text-decoration: none;
+//   border-radius: 5px;
+//   transition: background 0.3s ease;
+// }
 
-.btn:hover {
-  background: #e68900;
-}
+// .btn:hover {
+//   background: #e68900;
+// }
 
 section {
   padding: 60px 20px;
