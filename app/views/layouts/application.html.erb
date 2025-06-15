@@ -25,4 +25,8 @@
   <body>
     <%= yield %>
   </body>
+
+  <%= turbo_frame_tag :flashes do %>
+    <%= render "shared/flashes" %>
+  <% end %>
 </html>

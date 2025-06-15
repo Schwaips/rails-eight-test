@@ -12,7 +12,9 @@
   <section id="hero">
     <h2>Explore the Universe of My Work</h2>
     <p>Dive into my portfolio and discover stellar projects.</p>
-    <a href="#projects" class="btn">View Projects</a>
+    <%= render(Common::Button::BtnComponent.new(builder: 'default', style: 'primary', right_icon: 'cube')) do %>
+      View project
+    <% end %>
   </section>
 
   <section id="about">
@@ -21,11 +23,9 @@
   </section>
 
 
-      <%= render(Common::Button::BtnComponent.new(builder: 'default', style: 'primary', right_icon: 'cube')) do
-        'Right Icon'
-      end %>
   <section id="projects">
     <h2>Projects</h2>
+
     <div class="project">
       <h3>Galaxy Explorer</h3>
       <p>An interactive map of the Milky Way.</p>
