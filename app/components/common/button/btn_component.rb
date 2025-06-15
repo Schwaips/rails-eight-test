@@ -30,7 +30,7 @@ module Common
       private
 
       def generate_classes(style, other_styles)
-        classes = ['btn']
+        classes = [ "btn" ]
         classes << "btn--#{style}"
         return classes unless other_styles
 

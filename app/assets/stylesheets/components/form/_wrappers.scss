@@ -1,0 +1,33 @@
+.form__wrapper {
+  display: grid;
+  gap: 1rem;
+
+  &--default {
+    display: grid;
+    gap: 0.375rem;
+  }
+
+  &--checkbox,
+  &--switch {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-end;
+    column-gap: 0.5rem;
+    row-gap: 0.375rem;
+
+    & .label {
+      grid-column: 2;
+    }
+  }
+
+  &--radio_buttons {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  &--checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
